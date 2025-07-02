@@ -843,7 +843,7 @@
                                     </p>
 
                                     <form class="fpattern-subscribe-form fpattern-up" id="newsletter-form">
-                                        <input type="email" name="email" placeholder="Enter your email" required>
+                                        <input type="email" name="user_email" placeholder="Enter your email" required>
                                         <button type="submit"
                                             class="fpattern-button fpattern-icon-button-sm fpattern-arrow-place"></button>
                                     </form>
@@ -1111,7 +1111,7 @@
   document.getElementById("newsletter-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_qs8cx7n", "template_95sj15u", this)
+    emailjs.sendForm("YOUR_SERVICE_ID", "template_95sj15u", this)
       .then(() => {
         alert("Thank you! Newsletter email sent successfully.");
         this.reset();

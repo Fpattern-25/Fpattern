@@ -1456,13 +1456,13 @@ menu
 @media screen and (max-width: 1200px) {
   .fpattern-menu-frame .fpattern-menu-right-frame {
     display: none;
-  } 
-}
-/* @media screen and (max-height: 800px) {
-  .fpattern-menu-frame .fpattern-menu-right-frame {
-   display: none; 
   }
-} */
+}
+@media screen and (max-height: 800px) {
+  .fpattern-menu-frame .fpattern-menu-right-frame {
+    /* display: none; */
+  }
+}
 .fpattern-menu-frame.fpattern-active {
   opacity: 1;
   pointer-events: all;

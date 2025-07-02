@@ -138,7 +138,7 @@
                                     </div>
                                 </div>
                                 <div class="fpattern-menu-right">
-                                    <div class="row">
+                                    <div class="row" >
                                         <div class="col-lg-7 fpattern-mb-60">
 
                                             <h6 class="fpattern-muted fpattern-mb-30">Projects</h6>
@@ -842,8 +842,8 @@
                                     <p class="fpattern-light-soft fpattern-up fpattern-mb-30">Subscribe our newsletter:
                                     </p>
 
-                                    <form class="fpattern-subscribe-form fpattern-up" id="newsletter-form">
-                                        <input type="email" name="email" placeholder="Enter your email" required>
+                                    <form class="fpattern-subscribe-form fpattern-up">
+                                        <input type="text" placeholder="Enter our email">
                                         <button type="submit"
                                             class="fpattern-button fpattern-icon-button-sm fpattern-arrow-place"></button>
                                     </form>
@@ -919,8 +919,7 @@
                                                 Uithoorn, Noord Holland
                                                 <span class="fpattern-no-wrap">
                                                     <i class="fa fa-fw fa-phone fa-rotate-90" aria-hidden="true"></i>
-                                                    <a href="tel:+31622074483" data-no-swup
-                                                        class="fpattern-phone-link">+31 622 074
+                                                    <a href="tel:+31622074483" data-no-swup class="fpattern-phone-link">+31 622 074
                                                         483</a>
                                                 </span>
                                             </p>
@@ -1099,26 +1098,12 @@
     <!-- Fpattern js -->
     <script src="js/main.js"></script>
 
-    <!-- for sending email -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("LhirCf3fAM6-u9sry"); // replace with your EmailJS public key
-        })();
-    </script>
-
-    <script>
-  document.getElementById("newsletter-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_qs8cx7n", "template_95sj15u", this)
-      .then(() => {
-        alert("Thank you! Newsletter email sent successfully.");
-        this.reset();
-      }, (error) => {
-        alert("Oops! Something went wrong. " + error.text);
-      });
-  });
+<!-- for sending email -->
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("LhirCf3fAM6-u9sry"); // replace with your EmailJS public key
+  })();
 </script>
 
 
